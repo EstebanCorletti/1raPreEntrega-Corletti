@@ -1,0 +1,232 @@
+.nosotros {
+    width: 100%;
+    background-attachment: fixed;
+    padding-top: 0%;
+    padding-bottom: 2%;
+
+    .imagenNosotros {
+        img {
+            @include imagenes_principales (60vh);
+            object-fit: cover;
+
+        }
+    }
+
+    .contenedor_nosotros {
+        margin-left: 10%;
+        @include contenedor-paginas-elementos (80%, 1%, left);
+        margin-top: 1%;
+
+        .objetivo {
+            margin-top: 2%;
+
+            .nosotros_imagen--objetivo {
+                img {
+                    width: 100%;
+                    border-color: whitesmoke;
+                    border: solid;
+                    border-radius: 1rem;
+                    color: whitesmoke;
+                    animation: float infinite 2s ease-in-out;
+                    border-width: map-get($grosores, 3);
+                }
+            }
+
+            .quienes_somos {
+                h1 {
+                    color: antiquewhite;
+                    text-align: map-get($alineamientos, med);
+                    font-family: $main_font;
+                }
+
+                p {
+                    color: antiquewhite;
+                    margin-top: 5%;
+                    font-family: $secondary_font;
+                }
+            }
+
+            .te_esperamos {
+                h3 {
+                    color: antiquewhite;
+                    text-align: map-get($alineamientos, med);
+                    font-family: $main_font;
+                }
+
+                @extend .quienes_somos;
+            }
+        }
+
+        .video {
+            margin-top: 2%;
+            display: flex;
+
+            iframe {
+                width: 100%;
+                height: 40vh;
+                border: solid;
+                border-color: antiquewhite;
+                border-width: map-get($grosores, 3);
+            }
+
+            .texto_video {
+                h2 {
+                    color: antiquewhite;
+                    text-align: map-get($alineamientos, med);
+                    font-family: $main_font;
+                    margin-top: map-get($margins , 5);
+                }
+
+                p {
+                    color: antiquewhite;
+                    margin-top: 5%;
+                    text-align: map-get($alineamientos, der);
+                    font-family: $secondary_font;
+                }
+            }
+
+
+        }
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .nosotros {
+
+        .contenedor_nosotros {
+            margin-left: 5%;
+            @include contenedor-paginas-elementos (90%, 1%, left);
+            margin-top: 1%;
+
+            .objetivo {
+                margin-top: 2%;
+
+                .quienes_somos {
+                    h1 {
+                        color: antiquewhite;
+                        text-align: center;
+                        font-family: $main_font;
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        color: antiquewhite;
+                        margin-top: 5%;
+                        font-family: $secondary_font;
+                        font-size: 0.8rem;
+                        text-align: map-get($alineamientos, med);
+                    }
+                }
+
+                .te_esperamos {
+                    h3 {
+                        color: antiquewhite;
+                        text-align: map-get($alineamientos, med);
+                        font-family: $main_font;
+                    }
+
+                    p {
+                        color: antiquewhite;
+                        margin-top: 5%;
+                        font-family: $secondary_font;
+                        font-size: 0.8rem;
+                        align-self: map-get($alineamientos, med);
+                    }
+
+                }
+
+            }
+
+            .video {
+                margin-top: 2%;
+                display: flex;
+                flex-direction: row-reverse;
+                text-align: map-get($alineamientos, med);
+
+
+                .texto_video {
+                    h2 {
+                        color: antiquewhite;
+                        text-align: center;
+                        font-family: $main_font;
+                        margin-top: map-get($margins , 5);
+                        font-size: 1.8rem;
+                    }
+
+                    p {
+                        color: antiquewhite;
+                        margin-top: 5%;
+                        font-family: $secondary_font;
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .nosotros {
+
+        .imagenNosotros {
+            img {
+                @include imagenes_principales (30vh);
+
+            }
+        }
+
+        .contenedor_nosotros {
+            margin-left: 10%;
+            width: 80%;
+            margin-top: 5%;
+
+            .quienes_somos {
+                text-align: center;
+            }
+
+            .video {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: map-get($margins, 10);
+
+                iframe {
+                    height: 30vh;
+                }
+
+                .texto_video {
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .objetivo {
+                margin-top: 10%;
+
+                h1 {
+                    margin-top: map-get($margins, 5);
+                }
+
+                h3 {
+                    margin-top: map-get($margins, 5);
+                }
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,122 @@
+.error {
+    width: 100%;
+    margin-bottom: 0%;
+    height: 82vh;
+    background-repeat: no-repeat;
+    background-image: url(../assets/imagen/error404.png);
+
+    .gus_fring {
+        width: 70%;
+
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+            padding-top: 10%;
+            color: map-get($colors , main);
+            font-family: $main-font;
+        }
+
+        p {
+            text-align: map-get($alineamientos, med);
+            font-size: 1rem;
+            color: map-get($colors , main);
+            font-family: $secondary_font;
+        }
+
+        .return_button {
+            width: 19%;
+            height: 12vh;
+            background-color: black;
+            border: solid;
+            border-color: map-get($colors, main);
+            margin-left: 40%;
+            animation: error infinite 1s ease-in-out;
+
+            h2 {
+                padding: 10%;
+
+                a {
+                    color: map-get($colors , main);
+                }
+            }
+
+            &:hover {
+                background-color: map-get($colors, main);
+                text-decoration: none;
+                border: solid;
+                border-color: map-get($colors , second);
+
+                h2 {
+                    a {
+                        color: map-get($colors , second);
+                        text-decoration: none;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 991px) {
+
+    .error {
+        width: 100%;
+        margin-bottom: 0%;
+        background-image: url(../assets/imagen/error404_2.png);
+        height: 90vh;
+
+        .gus_fring {
+            width: 100%;
+
+            h1 {
+                font-size: 5rem;
+                text-align: center;
+                padding-top: 20%;
+                color: map-get($colors , main);
+            }
+
+            p {
+                text-align: center;
+                font-size: 1rem;
+                color: map-get($colors , main);
+            }
+
+            .return_button {
+                width: 30%;
+                height: 12vh;
+                background-color: black;
+                border: solid;
+                border-color: map-get($colors, main);
+                margin-left: 35%;
+                animation: error infinite 1s ease-in-out;
+                margin-top: 10%;
+
+                h2 {
+                    padding: 10%;
+
+                    a {
+                        color: map-get($colors , main);
+                    }
+                }
+
+                &:hover {
+                    background-color: map-get($colors, main);
+                    text-decoration: none;
+                    border: solid;
+                    border-color: map-get($colors , second);
+
+                    h2 {
+                        a {
+                            color: map-get($colors , second);
+                            text-decoration: none;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}

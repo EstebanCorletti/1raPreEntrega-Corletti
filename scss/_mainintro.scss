@@ -1,0 +1,252 @@
+main {
+    width: 100%;
+    background-image: url(../assets/imagen/background.png);
+    background-attachment: fixed;
+    padding-top: 0%;
+    padding-bottom: 2%;
+
+    .imagenPrincipal {
+        img {
+            @include imagenes_principales (60vh);
+
+        }
+    }
+
+    .container {
+        @include contenedor-paginas-elementos (80%, 1%, left);
+
+        .introNosotros {
+            margin-top: 2%;
+
+            .columna_nosotros {
+                padding-left: 0%;
+                margin-left: 0%;
+            }
+
+            .imagen_intro--nosotros {
+                img {
+                    width: 100%;
+                    border-color: map-get($colors, main);
+                    border: solid;
+                    border-radius: 1rem;
+                    border-width: map-get($grosores, 3);
+                    animation: float infinite 2s ease-in-out;
+                    color: map-get($colors, main);
+                }
+            }
+
+            .quienes_somos {
+
+                h1 {
+                    color: antiquewhite;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-family: $main-font;
+                }
+
+                p {
+                    color: antiquewhite;
+                    text-align: center;
+                    font-size: 0.9rem;
+                }
+
+                h2 {
+                    margin-top: 5%;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-family: $main-font;
+
+                    &:hover {
+                        color: green;
+                    }
+                }
+            }
+        }
+
+        .introMenu {
+            margin-top: 2%;
+
+            .ordernar_intro {
+                h1 {
+                    color: antiquewhite;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-family: $main-font;
+                }
+
+                p {
+                    color: antiquewhite;
+                    text-align: center;
+                    font-size: 0.9rem
+                }
+
+                h2 {
+                    margin-top: 5%;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-family: $main-font;
+
+                    &:hover {
+                        color: green;
+                    }
+                }
+            }
+
+            .columna_ordenar {
+
+                .imagen_intro--menu {
+                    img {
+                        width: 100%;
+                        border-color: map-get($colors, main);
+                        border: solid;
+                        border-radius: 1rem;
+                        color: map-get($colors, main);
+                        animation: float infinite 2s ease-in-out;
+                        border-width: map-get($grosores, 3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    main {
+        .imagenPrincipal {
+            img {
+                @include imagenes_principales (30vh);
+            }
+        }
+
+        .container {
+            margin-top: 5%;
+            width: 100%;
+
+            .introNosotros {
+                width: 100%;
+                margin-left: 2%;
+
+                .quienes_somos {
+
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        @include menu-intro-texto ($secondary_font, 5%);
+                        font-size: 0.8rem;
+                    }
+
+                    h2 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .introMenu {
+                width: 100%;
+                margin-left: 2%;
+                margin-top: 2%;
+                display: flex;
+                flex-direction: row-reverse;
+
+                .ordernar_intro {
+
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        @include menu-intro-texto ($secondary_font, 5%);
+                        font-size: 0.8rem;
+                    }
+
+                    h2 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+    main {
+        .imagenPrincipal {
+            img {
+                @include imagenes_principales (30vh);
+            }
+        }
+
+        .container {
+            margin-top: 5%;
+
+            .introNosotros {
+                width: 90%;
+                margin-left: 5%;
+
+                .quienes_somos {
+                    margin-top: 2%;
+
+                    .quienes_somos {
+
+                        h1 {
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            @include menu-intro-texto ($secondary_font, 5%);
+                            font-size: 0.9rem;
+                        }
+
+                        h2 {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .introMenu {
+                width: 95%;
+                margin-left: 2%;
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 5%;
+
+                .ordernar_intro {
+                    margin-top: 2%;
+
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        @include menu-intro-texto ($secondary_font, 5%);
+                        font-size: 0.8rem;
+                    }
+
+                    h2 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

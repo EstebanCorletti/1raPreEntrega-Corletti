@@ -1,0 +1,189 @@
+.registrate {
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(../assets/imagen/background.png);
+    padding-top: 0%;
+    padding-bottom: 2%;
+
+    .imagenRegistrate {
+        width: 100%;
+        height: 60vh;
+        padding: 0%;
+        margin: 0;
+        background-image: url(../assets/imagen/registro_principal-01.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        object-fit: cover;
+
+        .registrateContenedor {
+            width: 50%;
+            text-align: map-get($alineamientos, med);
+            font-size: 80%;
+            padding-right: 20%;
+            margin-top: map-get($margins , 1);
+
+            h1 {
+                font-family: $main_font;
+            }
+
+            p {
+                font-family: $secondary_font;
+                font-size: 0.8rem;
+            }
+
+            form {
+                font-family: $main_font;
+                display: flex;
+                flex-direction: column;
+                align-items: map-get($alineamientos, med);
+
+                label {
+                    margin-top: map-get($margins , 2);
+                }
+
+                input {
+                    width: 50%;
+                }
+
+                .submit {
+                    margin-top: map-get($margins , 5);
+                    background-color: map-get($colors, second);
+                }
+            }
+        }
+    }
+
+
+    .beneficios_registro--contenedor {
+        margin-top: 2%;
+        color: whitesmoke;
+        margin-left: 15%;
+        width: 65%;
+        backdrop-filter: blur(12px);
+        border-radius: 1rem;
+        padding: 2%;
+
+        h2 {
+            font-family: $main_font;
+        }
+
+        p {
+            margin-top: 2%;
+            font-family: $secondary_font;
+        }
+
+        .lista_beneficios {
+            margin-left: 3%;
+        }
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+
+    .registrate {
+        .imagenRegistrate {
+            background-image: url(../assets/imagen/registro_principal-01.jpg);
+            height: 60vh;
+
+            .registrateContenedor {
+                width: 50%;
+                text-align: map-get($alineamientos, med);
+                font-size: 80%;
+                padding-right: 20%;
+                margin-top: map-get($margins , 1);
+
+                h1 {
+                    color: map-get($colors , second);
+                    font-family: $main_font;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-family: $secondary_font;
+                    color: map-get($colors , second);
+                }
+
+            }
+
+        }
+
+        .beneficios_registro--contenedor {
+            margin-top: 2%;
+            color: whitesmoke;
+            margin-left: 15%;
+            width: 65%;
+            backdrop-filter: blur(12px);
+            border-radius: 1rem;
+            padding: 2%;
+
+            h2 {
+                font-family: $main_font;
+                font-size: 1.3rem;
+            }
+
+            p {
+                margin-top: 2%;
+                font-family: $secondary_font;
+                font-size: 0.8rem;
+            }
+
+            .lista_beneficios {
+                margin-left: 3%;
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+    .registrate {
+        .imagenRegistrate {
+            background-image: url(../assets/imagen/registro_background.jpg);
+            height: 70vh;
+
+            .registrateContenedor {
+                text-align: map-get($alineamientos, med);
+                backdrop-filter: blur(5px);
+                width: 100%;
+                padding: 5%;
+                color: map-get($colors, main);
+                margin: 0%;
+
+                h1 {
+                    color: map-get($colors , main);
+                    font-family: $main_font;
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                    color: map-get($colors , main);
+                }
+
+            }
+        }
+
+        .beneficios_registro--contenedor {
+            margin-top: map-get($margins , 0);
+            width: 80%;
+            margin-left: 10%;
+
+            h2 {
+                padding: 2%;
+                text-align: map-get($alineamientos, med);
+                color: map-get($colors , third);
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin-left: 3%;
+                text-align: map-get($alineamientos, med);
+            }
+        }
+    }
+}

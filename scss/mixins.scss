@@ -1,0 +1,48 @@
+@mixin card-body-text ($font, $margin) {
+    color: map-get($colors, main);
+    font-family: $font;
+    margin-top: $margin;
+    text-align: center;
+}
+
+@mixin menu-intro-texto ($font, $margin) {
+    margin-top: $margin;
+    color: map-get($colors, main);
+    font-family: $font;
+}
+
+@mixin contenedor-paginas-elementos ($size, $margin, $align) {
+    justify-content: center;
+    align-items: center;
+    width: $size;
+    margin-top: $margin;
+    text-align: $align;
+}
+
+@mixin nav-display-flex ($flexdirection, $justification) {
+
+    display: flex;
+    padding-top: 5%;
+    list-style-type: none;
+    flex-direction: $flexdirection;
+    justify-content: $justification;
+
+}
+
+@mixin logo-nav-responsive ($size, $padding) {
+    width: $size;
+    padding: $padding;
+}
+
+@mixin imagenes_principales ($height) {
+    width: 100%;
+    height: $height;
+}
+
+@mixin contenedor-sucursales-elementos ($size, $margin) {
+    width: $size;
+    margin-top: $margin;
+    margin-left: 10%;
+    color: map-get($colors , main);
+
+}

@@ -1,0 +1,72 @@
+footer {
+    width: 100%;
+    background-image: url(../assets/imagen/footer_background.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: map-get($alineamientos, med);
+
+    h4 {
+        color: white;
+        text-align: map-get($alineamientos , med);
+        opacity: 0.8;
+        padding-top: 2%;
+    }
+
+    .container_footer {
+        margin-left: 10%;
+        width: 85%;
+
+        .sponsors {
+            img {
+                width: 80%;
+
+                &:hover {
+                    opacity: 70%;
+                }
+            }
+        }
+    }
+
+    .iconBox {
+        margin-top: 2%;
+        display: flex;
+        justify-content: map-get($alineamientos, med);
+
+        a {
+            padding: 0% 2%;
+
+            .socialIcons {
+                color: map-get($colors, main);
+                text-decoration: none;
+            }
+        }
+    }
+
+    h5 {
+        text-align: map-get($alineamientos, med);
+        color: whitesmoke;
+        margin-top: 5%;
+    }
+}
+
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+
+    footer {
+        .sponsors {
+            img {
+                width: 100%;
+            }
+        }
+
+        h4 {
+            margin-top: map-get($margins, 10)
+        }
+
+        h5 {
+            font-size: 0.8rem;
+            margin-top: map-get($margins, 10);
+        }
+
+    }
+}

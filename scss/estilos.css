@@ -1,0 +1,1074 @@
+header {
+  position: sticky;
+  z-index: 200;
+  top: 0%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header .logo {
+  width: 10%;
+  padding: 1% 0%;
+}
+
+header .logo img {
+  width: 100%;
+  display: flex;
+  transition: opacity 3s;
+  animation: shake infinite 1s ease-in-out;
+}
+
+header .logo:hover {
+  opacity: 70%;
+}
+
+header nav {
+  width: 60%;
+}
+
+header nav ul {
+  display: flex;
+  padding-top: 5%;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: inherit;
+}
+
+header nav ul li {
+  padding: 0% 5%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: green;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+  }
+
+  header .logo {
+    width: 50%;
+    padding: 5% 0%;
+  }
+
+  header .logo:hover {
+    opacity: 70%;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    padding-top: 5%;
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header nav ul li {
+    padding: 5% 0%;
+    text-align: center;
+  }
+}
+
+main {
+  width: 100%;
+  background-image: url(../assets/imagen/background.png);
+  background-attachment: fixed;
+  padding-top: 0%;
+  padding-bottom: 2%;
+}
+
+main .imagenPrincipal img {
+  width: 100%;
+  height: 60vh;
+}
+
+main .container {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 1%;
+  text-align: left;
+}
+
+main .container .introNosotros {
+  margin-top: 2%;
+}
+
+main .container .introNosotros .columna_nosotros {
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+main .container .introNosotros .imagen_intro--nosotros img {
+  width: 100%;
+  border-color: whitesmoke;
+  border: solid;
+  border-radius: 1rem;
+  animation: float infinite 2s ease-in-out;
+  color: whitesmoke;
+}
+
+main .container .introNosotros .quienes_somos,
+main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos,
+.nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos,
+main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos h2,
+.nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos h2,
+main .container .introNosotros .introMenu .ordernar_intro,
+main .container .introMenu .introNosotros .ordernar_intro,
+main .container .introNosotros .introMenu .ordernar_intro h2,
+main .container .introMenu .introNosotros .ordernar_intro h2,
+main .container .introNosotros .quienes_somos h2 {
+  color: antiquewhite;
+  text-align: center;
+}
+
+main .container .introNosotros .quienes_somos h2,
+main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos h2,
+.nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos h2,
+main .container .introNosotros .introMenu .ordernar_intro h2,
+main .container .introMenu .introNosotros .ordernar_intro h2 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+main .container .introNosotros .quienes_somos h3,
+main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos h3,
+.nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos h3,
+main .container .introNosotros .introMenu .ordernar_intro h3,
+main .container .introMenu .introNosotros .ordernar_intro h3 {
+  margin-top: 10%;
+}
+
+main .container .introNosotros .quienes_somos a,
+main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos a,
+.nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos a,
+main .container .introNosotros .introMenu .ordernar_intro a,
+main .container .introMenu .introNosotros .ordernar_intro a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+main .container .introNosotros .quienes_somos a:hover,
+main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos a:hover,
+.nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos a:hover,
+main .container .introNosotros .introMenu .ordernar_intro a:hover,
+main .container .introMenu .introNosotros .ordernar_intro a:hover {
+  color: green;
+}
+
+main .container .imagen_intro--menu img {
+  width: 100%;
+  border-color: whitesmoke;
+  border: solid;
+  border-radius: 1rem;
+  color: whitesmoke;
+  animation: float infinite 2s ease-in-out;
+}
+
+main .container .introMenu {
+  margin-top: 2%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  main .imagenPrincipal img {
+    width: 100%;
+    height: 30vh;
+  }
+
+  main .container {
+    margin-top: 5%;
+  }
+
+  main .container .introNosotros {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  main .container .introNosotros .quienes_somos,
+  main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos,
+  .nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos,
+  main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos h2,
+  .nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos h2,
+  main .container .introNosotros .quienes_somos h2,
+  main .container .introNosotros .introMenu .ordernar_intro,
+  main .container .introMenu .introNosotros .ordernar_intro,
+  main .container .introNosotros .introMenu .ordernar_intro h2,
+  main .container .introMenu .introNosotros .ordernar_intro h2 {
+    margin-top: 5%;
+  }
+
+  main .container .introNosotros .quienes_somos p,
+  main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos p,
+  .nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos p,
+  main .container .introNosotros .introMenu .ordernar_intro p,
+  main .container .introMenu .introNosotros .ordernar_intro p {
+    margin-top: 5%;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  main .container .introMenu {
+    width: 95%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5%;
+  }
+
+  main .container .introMenu p {
+    margin-top: 5%;
+  }
+}
+
+.menu {
+  width: 100%;
+  background-attachment: fixed;
+  padding-top: 0%;
+  padding-bottom: 2%;
+}
+
+.menu h1 {
+  margin-top: 3%;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu img {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.menu .contenedorMenu {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.menu .contenedorMenu h2 {
+  margin-top: 5%;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu .contenedorMenu p {
+  margin-top: 2%;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu .contenedorMenu .cards {
+  margin-top: 2%;
+}
+
+.menu .contenedorMenu .cards .card-container,
+.menu .contenedorMenu .cards .card-container .card-body {
+  border: solid;
+  border-color: whitesmoke;
+}
+
+.menu .contenedorMenu .cards .card-container img,
+.menu .contenedorMenu .cards .card-container .card-body img {
+  height: 40vh;
+}
+
+.menu .contenedorMenu .cards .card-container .card-body {
+  background-color: black;
+  border-width: 0.1vh;
+}
+
+.menu .contenedorMenu .cards .card-container .card-body .card-title,
+.menu .contenedorMenu .cards .card-container .card-body .card-prize {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.menu .contenedorMenu .cards .card-container .card-body .card-prize {
+  color: darkgreen;
+}
+
+.menu .contenedorMenu .cards .card-container .card-body .card-text {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.menu .contenedorMenu .especiales {
+  margin-top: 5%;
+  color: whitesmoke;
+}
+
+.menu .contenedorMenu .postres {
+  margin-top: 5%;
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .menu img {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .menu .contenedorMenu {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .menu .contenedorMenu h2 {
+    margin-top: 10%;
+  }
+
+  .menu .contenedorMenu .especiales {
+    margin-top: 10%;
+  }
+
+  .menu .contenedorMenu .postres {
+    margin-top: 10%;
+    color: whitesmoke;
+  }
+}
+
+.nosotros {
+  width: 100%;
+  background-attachment: fixed;
+  padding-top: 0%;
+  padding-bottom: 2%;
+}
+
+.nosotros .imagenNosotros img {
+  width: 100%;
+  height: 60vh;
+}
+
+.nosotros .contenedor_nosotros {
+  margin-left: 10%;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 1%;
+  text-align: left;
+  margin-top: 1%;
+}
+
+.nosotros .contenedor_nosotros .objetivo {
+  margin-top: 2%;
+}
+
+.nosotros .contenedor_nosotros .objetivo .nosotros_imagen--objetivo img {
+  width: 100%;
+  border-color: whitesmoke;
+  border: solid;
+  border-radius: 1rem;
+  color: whitesmoke;
+  animation: float infinite 2s ease-in-out;
+}
+
+.nosotros .contenedor_nosotros .objetivo .quienes_somos h1,
+.nosotros .contenedor_nosotros .objetivo .te_esperamos h1,
+main .container .introNosotros .quienes_somos .nosotros .contenedor_nosotros .objetivo h2 h1,
+.nosotros .contenedor_nosotros .objetivo main .container .introMenu .ordernar_intro h1,
+main .container .introMenu .nosotros .contenedor_nosotros .objetivo .ordernar_intro h1,
+main .container .introNosotros .introMenu .ordernar_intro .nosotros .contenedor_nosotros .objetivo h2 h1,
+main .container .introMenu .introNosotros .ordernar_intro .nosotros .contenedor_nosotros .objetivo h2 h1 {
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.nosotros .contenedor_nosotros .objetivo .quienes_somos p,
+.nosotros .contenedor_nosotros .objetivo .te_esperamos p,
+main .container .introNosotros .quienes_somos .nosotros .contenedor_nosotros .objetivo h2 p,
+.nosotros .contenedor_nosotros .objetivo main .container .introMenu .ordernar_intro p,
+main .container .introMenu .nosotros .contenedor_nosotros .objetivo .ordernar_intro p,
+main .container .introNosotros .introMenu .ordernar_intro .nosotros .contenedor_nosotros .objetivo h2 p,
+main .container .introMenu .introNosotros .ordernar_intro .nosotros .contenedor_nosotros .objetivo h2 p {
+  color: antiquewhite;
+  margin-top: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nosotros .contenedor_nosotros .objetivo .te_esperamos h3 {
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.nosotros .contenedor_nosotros .video {
+  margin-top: 2%;
+  display: flex;
+}
+
+.nosotros .contenedor_nosotros .video iframe {
+  width: 100%;
+  height: 40vh;
+  border: solid;
+  border-color: antiquewhite;
+}
+
+.nosotros .contenedor_nosotros .video .texto_video h2 {
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5%;
+}
+
+.nosotros .contenedor_nosotros .video .texto_video p {
+  color: antiquewhite;
+  margin-top: 5%;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .nosotros .imagenNosotros img {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .nosotros .contenedor_nosotros {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 5%;
+  }
+
+  .nosotros .contenedor_nosotros .quienes_somos,
+  .nosotros .contenedor_nosotros main .container .introNosotros .quienes_somos h2,
+  main .container .introNosotros .quienes_somos .nosotros .contenedor_nosotros h2,
+  .nosotros .contenedor_nosotros main .container .introMenu .ordernar_intro,
+  main .container .introMenu .nosotros .contenedor_nosotros .ordernar_intro,
+  .nosotros .contenedor_nosotros main .container .introNosotros .introMenu .ordernar_intro h2,
+  main .container .introNosotros .introMenu .ordernar_intro .nosotros .contenedor_nosotros h2,
+  .nosotros .contenedor_nosotros main .container .introMenu .introNosotros .ordernar_intro h2,
+  main .container .introMenu .introNosotros .ordernar_intro .nosotros .contenedor_nosotros h2,
+  .nosotros .contenedor_nosotros .objetivo .te_esperamos,
+  main .container .introNosotros .nosotros .contenedor_nosotros .objetivo .te_esperamos h2,
+  .nosotros .contenedor_nosotros .objetivo main .container .introNosotros .te_esperamos h2 {
+    text-align: center;
+  }
+
+  .nosotros .contenedor_nosotros .video {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10%;
+  }
+
+  .nosotros .contenedor_nosotros .video iframe {
+    height: 30vh;
+  }
+
+  .nosotros .contenedor_nosotros .video .texto_video p {
+    text-align: center;
+  }
+
+  .nosotros .contenedor_nosotros .objetivo {
+    margin-top: 10%;
+  }
+
+  .nosotros .contenedor_nosotros .objetivo h1 {
+    margin-top: 5%;
+  }
+
+  .nosotros .contenedor_nosotros .objetivo h3 {
+    margin-top: 5%;
+  }
+}
+
+.sucursales {
+  width: 100%;
+  background-image: url(../assets/imagen/background.png);
+  background-attachment: fixed;
+  padding-top: 0%;
+  padding-bottom: 2%;
+}
+
+.sucursales .imagenSucursales img {
+  width: 100%;
+  height: 60vh;
+}
+
+.sucursales .intro_sucursales,
+.sucursales .seccion_sucursales {
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 10%;
+  color: whitesmoke;
+}
+
+.sucursales .seccion_sucursales {
+  margin-top: 5%;
+}
+
+.sucursales .seccion_sucursales .contenedor_moreno,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova {
+  width: 100%;
+  border: solid;
+  border-color: whitesmoke;
+  border-radius: 1rem;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  color: whitesmoke;
+  margin-top: 2%;
+}
+
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales {
+  text-align: center;
+  padding: 5%;
+}
+
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .sucursal,
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova {
+  margin-top: 10%;
+}
+
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .sucursal .sucursalInfo,
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo,
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo_isidro_casanova,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo_isidro_casanova {
+  margin-top: 5%;
+}
+
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .sucursal .sucursalInfo h4,
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo h4,
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h4,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo h4,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo_isidro_casanova h4,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo h4,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h4 {
+  text-decoration: underline;
+  color: darkgreen;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .sucursal .sucursalInfo h5,
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo h5,
+.sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h5,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo h5,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo_isidro_casanova h5,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo h5,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sucursales .seccion_sucursales .contenedor_moreno iframe,
+.sucursales .seccion_sucursales .contenedor_isidro_casanova iframe {
+  height: 60vh;
+  padding: 1%;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h4 {
+  text-decoration: underline;
+}
+
+.sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.sucursales .seccion_sucursales .contenedor_isidro_casanova iframe {
+  height: 60vh;
+  padding: 1%;
+  width: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .sucursales .imagenSucursales img {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .sucursales .intro_sucursales,
+  .sucursales .seccion_sucursales {
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    color: whitesmoke;
+  }
+
+  .sucursales .intro_sucursales p,
+  .sucursales .seccion_sucursales p {
+    margin-top: 5%;
+  }
+
+  .sucursales .seccion_sucursales {
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    color: whitesmoke;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_moreno,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova {
+    width: 100%;
+    border: solid;
+    border-color: whitesmoke;
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    color: whitesmoke;
+    margin-top: 2%;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .sucursal,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal,
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova {
+    margin-top: 10%;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .sucursal .sucursalInfo,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo,
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo_isidro_casanova,
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo_isidro_casanova {
+    margin-top: 10%;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .sucursal .sucursalInfo h4,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo h4,
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo h4,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo h4,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo_isidro_casanova h4,
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h4,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h4 {
+    text-decoration: underline;
+    color: darkgreen;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .sucursal .sucursalInfo h5,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo h5,
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo h5,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo h5,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .contenedor_sucursales .sucursal .sucursalInfo_isidro_casanova h5,
+  .sucursales .seccion_sucursales .contenedor_moreno .contenedor_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h5,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .contenedor_sucursales .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h5 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_moreno iframe,
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova iframe {
+    height: 40vh;
+    padding: 1%;
+    width: 100%;
+    border-radius: 5%;
+    margin-top: 10%;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h4 {
+    text-decoration: underline;
+    color: darkgreen;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova .sucursal_isidro_casanova .sucursalInfo_isidro_casanova h5 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .sucursales .seccion_sucursales .contenedor_isidro_casanova iframe {
+    height: 40vh;
+    padding: 1%;
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+
+.registrate {
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url(../assets/imagen/background.png);
+  padding-top: 0%;
+  padding-bottom: 2%;
+}
+
+.registrate .imagenRegistrate {
+  width: 100%;
+  height: 60vh;
+  padding: 0%;
+  margin: 0;
+  background-image: url(../assets/imagen/registro_principal.png);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registrate .imagenRegistrate .registrateContenedor {
+  width: 50%;
+  text-align: center;
+  font-size: 80%;
+  padding-right: 20%;
+  margin-top: 2%;
+}
+
+.registrate .imagenRegistrate .registrateContenedor h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.registrate .imagenRegistrate .registrateContenedor p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.registrate .imagenRegistrate .registrateContenedor form {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registrate .imagenRegistrate .registrateContenedor form label {
+  margin-top: 2%;
+}
+
+.registrate .imagenRegistrate .registrateContenedor form input {
+  width: 50%;
+}
+
+.registrate .imagenRegistrate .registrateContenedor form .submit {
+  margin-top: 5%;
+  background-color: black;
+}
+
+.registrate .beneficios_registro--contenedor {
+  margin-top: 2%;
+  color: whitesmoke;
+  margin-left: 15%;
+  width: 65%;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  padding: 2%;
+}
+
+.registrate .beneficios_registro--contenedor h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.registrate .beneficios_registro--contenedor p {
+  margin-top: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.registrate .beneficios_registro--contenedor .lista_beneficios {
+  margin-left: 3%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .registrate .imagenRegistrate {
+    background-image: url(../assets/imagen/registro_background.jpg);
+    height: 60vh;
+  }
+
+  .registrate .imagenRegistrate .registrateContenedor {
+    text-align: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    padding: 5%;
+    color: whitesmoke;
+    margin: 0%;
+  }
+
+  .registrate .imagenRegistrate .registrateContenedor h1 {
+    color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .registrate .beneficios_registro--contenedor {
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .registrate .beneficios_registro--contenedor h2 {
+    padding: 2%;
+    text-align: center;
+    color: darkgreen;
+  }
+
+  .registrate .beneficios_registro--contenedor p {
+    margin-left: 3%;
+    text-align: center;
+  }
+}
+
+body {
+  background-color: black;
+  padding: 0%;
+  margin: 0%;
+}
+
+.error {
+  width: 100%;
+  margin-bottom: 0%;
+  height: 82vh;
+  background-repeat: no-repeat;
+  background-image: url(../assets/imagen/error404.png);
+}
+
+.error .gus_fring {
+  width: 70%;
+}
+
+.error .gus_fring h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 10%;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+}
+
+.error .gus_fring p {
+  text-align: center;
+  font-size: 1rem;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.error .gus_fring .return_button {
+  width: 19%;
+  height: 12vh;
+  background-color: black;
+  border: solid;
+  border-color: whitesmoke;
+  margin-left: 40%;
+  animation: error infinite 1s ease-in-out;
+}
+
+.error .gus_fring .return_button h2 {
+  padding: 10%;
+}
+
+.error .gus_fring .return_button h2 a {
+  color: whitesmoke;
+}
+
+.error .gus_fring .return_button:hover {
+  background-color: whitesmoke;
+  text-decoration: none;
+  border: solid;
+  border-color: black;
+}
+
+.error .gus_fring .return_button:hover h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .error {
+    width: 100%;
+    margin-bottom: 0%;
+    background-image: url(../assets/imagen/error404_2.png);
+    height: 90vh;
+  }
+
+  .error .gus_fring {
+    width: 100%;
+  }
+
+  .error .gus_fring h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 20%;
+    color: whitesmoke;
+  }
+
+  .error .gus_fring p {
+    text-align: center;
+    font-size: 1rem;
+    color: whitesmoke;
+  }
+
+  .error .gus_fring .return_button {
+    width: 30%;
+    height: 12vh;
+    background-color: black;
+    border: solid;
+    border-color: whitesmoke;
+    margin-left: 35%;
+    animation: error infinite 1s ease-in-out;
+    margin-top: 10%;
+  }
+
+  .error .gus_fring .return_button h2 {
+    padding: 10%;
+  }
+
+  .error .gus_fring .return_button h2 a {
+    color: whitesmoke;
+  }
+
+  .error .gus_fring .return_button:hover {
+    background-color: whitesmoke;
+    text-decoration: none;
+    border: solid;
+    border-color: black;
+  }
+
+  .error .gus_fring .return_button:hover h2 a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes error {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+footer {
+  width: 100%;
+  background-image: url(../assets/imagen/footer_background.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer h4 {
+  color: white;
+  text-align: center;
+  opacity: 0.8;
+  padding-top: 2%;
+}
+
+footer .container_footer {
+  margin-left: 10%;
+  width: 85%;
+}
+
+footer .container_footer .sponsors img {
+  width: 80%;
+}
+
+footer .container_footer .sponsors img:hover {
+  opacity: 70%;
+}
+
+footer .iconBox {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .iconBox a {
+  padding: 0% 2%;
+}
+
+footer .iconBox a .socialIcons {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+footer h5 {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 5%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  footer .sponsors img {
+    width: 100%;
+  }
+
+  footer h4 {
+    margin-top: 10%;
+  }
+
+  footer h5 {
+    font-size: 0.8rem;
+    margin-top: 10%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

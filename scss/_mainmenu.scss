@@ -1,0 +1,103 @@
+.menu {
+    width: 100%;
+    background-attachment: fixed;
+    padding-top: 0%;
+    padding-bottom: 2%;
+
+    h1 {
+        @include menu-intro-texto ($main_font, 3%);
+    }
+
+    img {
+        @include imagenes_principales (60vh);
+        object-fit: cover;
+
+    }
+
+    .contenedorMenu {
+        width: 80%;
+        margin-left: 10%;
+
+        h2 {
+            @include menu-intro-texto ($main_font, 5%);
+        }
+
+        p {
+            @include menu-intro-texto ($secondary_font, 2%);
+        }
+
+        .cards {
+            margin-top: 2%;
+
+            .card-container {
+                border: solid;
+                border-color: map-get($colors, main);
+
+                img {
+                    height: 40vh;
+                }
+
+                .card-body {
+                    background-color: map-get($colors, second);
+                    @extend .card-container;
+                    border-width: 0.1vh;
+
+                    .card-title {
+                        @include card-body-text($main_font, 2%);
+                    }
+
+                    .card-prize {
+                        color: map-get($colors, third);
+                        @extend .card-title;
+                    }
+
+                    .card-text {
+                        @include card-body-text($secondary_font, 10%);
+
+                    }
+
+                }
+            }
+        }
+
+        .especiales {
+            margin-top: 5%;
+            color: map-get($colors, main)
+        }
+
+        .postres {
+            margin-top: 5%;
+            color: map-get($colors, main);
+        }
+
+    }
+
+}
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+
+    .menu {
+        img {
+            @include imagenes_principales (30vh);
+
+        }
+
+        .contenedorMenu {
+            @include contenedor-paginas-elementos (80%, 5%, center);
+
+            h2 {
+                margin-top: 10%;
+            }
+
+            .especiales {
+                margin-top: 10%;
+            }
+
+            .postres {
+                margin-top: 10%;
+                color: map-get($colors, main);
+            }
+        }
+    }
+
+}

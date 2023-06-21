@@ -1,0 +1,143 @@
+header {
+    position: sticky;
+    z-index: 200;
+    top: 0%;
+    background-color: map-get($colors , second);
+    display: flex;
+    justify-content: map-get($alineamientos, med);
+    width: 100%;
+
+    .logo {
+        @include logo-nav-responsive (10%, 1% 0%);
+
+        img {
+            width: 100%;
+            display: flex;
+            transition: opacity 3s;
+            animation: shake infinite 1s ease-in-out;
+        }
+
+        &:hover {
+            opacity: 70%;
+        }
+
+    }
+
+    nav {
+        width: 60%;
+
+        ul {
+            @include nav-display-flex (row, inherit);
+
+            li {
+                padding: 0% 5%;
+
+                a {
+                    text-decoration: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: antiquewhite;
+                    font-size: 1rem;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: map-get($colors , third);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width:0px) and (max-width: 991px) {
+
+    header {
+        position: relative;
+        display: flex;
+        align-items: map-get($alineamientos, med);
+        width: 100%;
+        background-color: map-get($colors , second);
+
+        .logo {
+            @include logo-nav-responsive (10%, 1% 0%);
+        }
+
+        nav {
+            width: 60%;
+
+            ul {
+                @include nav-display-flex (row, inherit);
+
+                li {
+                    padding: 0% 3%;
+
+                    a {
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: antiquewhite;
+                        font-size: 0.8rem;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: map-get($alineamientos , med);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: map-get($alineamientos, med);
+        width: 100%;
+        background-color: map-get($colors , second);
+
+        .logo {
+
+            @include logo-nav-responsive (50%, 5% 0%);
+
+
+            &:hover {
+                opacity: 70%;
+            }
+        }
+
+        nav {
+            width: 100%;
+
+            ul {
+                @include nav-display-flex (column, center);
+
+                li {
+                    padding: 5% 0%;
+                    text-align: map-get($alineamientos, med);
+
+                    a {
+                        text-decoration: none;
+                        font-family: Arial, Helvetica, sans-serif;
+                        color: antiquewhite;
+                        font-size: 1rem;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: green;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
